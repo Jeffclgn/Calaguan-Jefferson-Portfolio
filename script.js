@@ -112,8 +112,9 @@ document.addEventListener('DOMContentLoaded', function() {
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Thank you for your message! This is a demo form.');
+            alert('Thank you for your message!');
             contactForm.reset();
         });
     }
+
 });
