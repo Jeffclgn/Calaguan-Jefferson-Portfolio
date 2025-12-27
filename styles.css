@@ -154,7 +154,6 @@ body.light-theme {
 .nav-container .nav-menu {
     display: flex;
     text-align: center;
-    gap: 1rem;
     list-style: none;
 }
 
@@ -865,3 +864,4 @@ body.light-theme {
     .contact-container { flex-direction: column; }
 
 }
+
