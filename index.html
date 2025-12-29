@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jefferson Calaguan - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <input type="checkbox" id="theme-toggle">
+        <label for="theme-toggle" class="theme-toggle-label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <span class="toggle-ball"></span>
+        </label>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <button class="navbar-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#interests" class="nav-link">Interests</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="Jeff Picture.jpg" alt="Picture of Jefferson Calaguan" width="200" height="200">
+            <h1 class="hero-title">Jefferson Calaguan</h1>
+            <div class="hero-subtitle">
+                <span class="typing-text">BSIT, 1st Year | Laguna State Polytechnic University-SPCC</span>
+            </div>
+            <div class="hero-buttons">
+                <a href="Resume.pdf" class="btn btn-primary">Resume</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div><br>
+        <div class="scroll-indicator">
+            <div class="scroll-down"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <p>Hi! I’m Jefferson Calaguan, a BS Information Technology student and aspiring developer. I’m passionate about exploring new technologies, building projects, and turning ideas into practical solutions. I enjoy coding, learning new tools that help solve real-world problems. Always eager to grow, I actively work on my skills to grow as a future IT professional.</p>
+            <div class="education">
+                <h3>Education</h3>
+                <div class="edu-item">
+                    <h4>BS in Information Technology</h4>
+                    <p>Laguna State Polytechnic University-San Pablo City Campus</p>
+                    <p>2025 - Present</p>
+                </div><br>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fa-brands fa-csharp"></i>
+                <h1>C#</h1>
+                <h3>C#</h3>
+                <div class="skill-level"><div class="skill-bar" style="width: 80%"></div></div>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+                <div class="skill-level"><div class="skill-bar" style="width: 60%"></div></div>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-cuttlefish"></i>
+                <h3>C++</h3>
+                <div class="skill-level"><div class="skill-bar" style="width: 90%"></div></div>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML</h3>
+                <div class="skill-level"><div class="skill-bar" style="width: 80%"></div></div>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS</h3>
+                <div class="skill-level"><div class="skill-bar" style="width: 80%"></div></div>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js-square"></i>
+                <h3>JavaScript</h3>
+                <div class="skill-level"><div class="skill-bar" style="width: 60%"></div></div>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-file-excel"></i>
+                <h3>Microsoft Excel</h3>
+                <div class="skill-level"><div class="skill-bar" style="width: 65%"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="section">
+        <h2 class="section-title">Achievements</h2>
+
+        <div class="achievements-grid">
+            <div class="achievement-card" onclick="openImage('Python Certificate.png')">
+            <div class="cert-img">
+                <img src="Python Certificate.png" onclick="window.open(this.src)" width="300" height="200">
+            </div>
+                <h3>Python Certificate</h3>
+                <p>Python Essseantilas 1 Certification</p>
+             </div>
+             <div class="achievement-card" onclick="openImage('JavaScript Essentials.png')">
+            <div class="cert-img">
+                <img src="JavaScript Essentials.png" onclick="window.open(this.src)" width="300" height="200">
+            </div>
+                <h3>JavaScript Certificate</h3>
+                <p>JavaScript Essseantilas 1 Certification</p>
+             </div>
+            <div class="achievement-card" onclick="openImage('C++ Essentials.png')">
+            <div class="cert-img">
+                <img src="C++ Essentials.png" onclick="window.open(this.src)" width="300" height="200">
+            </div>
+                <h3>C++ Certificate</h3>
+                <p>C++ Essseantilas 1 Certification</p>
+             </div>
+            <div class="achievement-card" onclick="openImage('honors.jpg')">
+            <div class="cert-img">
+                <img src="honors.jpg" onclick="window.open(this.src)" width="300" height="200">
+            </div>
+                <h3>Academic Achievements</h3>
+                <p>Elementary-Senior High School Honors Student</p>
+            </div>
+            <div class="achievement-card" onclick="openImage('research.jpg')">
+            <div class="cert-img">
+                <img src="research.jpg" onclick="window.open(this.src)" width="300" height="200">
+            </div>
+                <h3>Awards for Outstanding Performance</h3>
+                <p>In Research</p>
+            </div>
+            <div class="achievement-card" onclick="openImage('work immersion.jpg')">
+            <div class="cert-img">
+                <img src="work immersion.jpg" onclick="window.open(this.src)" width="300" height="200">
+            </div>
+                <h3>Awards for Outstanding Performance</h3>
+                <p>In Work Immersion</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects section">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="C++.png" onclick="window.open(this.src)" width="300" height="200">
+                </div>
+                    <div class="project-details">
+                        <h3>Console-Based Laptop Purchasing System (C++)</h3>
+                        <p class="project-tech">C++</p>
+                        <div class="project-description">
+                            <p>A console-based C++ application that simulates a laptop buying system. Users can choose laptop models, customize options, and proceed with a purchase through a text-based interface. This project showcases my understanding of C++ fundamentals such as input/output handling, control structures, loops, and basic system logic, developed as part of my academic learning and programming practice.</p>
+                        </div>
+                        <div class="project-tags"><span>C++</span></div>
+                    </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Portfolio Website.png" onclick="window.open(this.src)" width="300" height="200">
+                </div>
+                    <div class="project-details">
+                        <h3>Personal Portfolio Website</h3>
+                        <p class="project-tech">HTML/CSS + JavaScript</p>
+                        <div class="project-description">
+                            <p>A responsive portfolio website built with pure HTML, CSS, and JavaScript to showcase my informations, skills and projects.</p>
+                        </div>
+                        <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="CSharp.png" onclick="window.open(this.src)" width="300" height="200">
+                </div>
+                    <div class="project-details">
+                        <h3>Roman Numeral Converter</h3>
+                        <p class="project-tech">C#</p>
+                        <div class="project-description">
+                            <p>A console-based application using C# that converts numbers into Roman numerals.</p>
+                        </div>
+                        <div class="project-tags"><span>C#</span></div>
+                    </div>
+                </div>
+        </div>
+    </section>
+ 
+    <section id="interests" class="section">
+        <h2 class="section-title">Interests</h2>
+        <div class="interests-container">
+            <span class="interest-tag">Problem-Solving</span>
+            <span class="interest-tag">Watching Movies</span>
+            <span class="interest-tag">Web Development</span>
+            <span class="interest-tag">Playing Badminton</span>
+        </div>
+    </section>
+
+    <section id="contact" class="contact section">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item"><i class="fab fa-facebook"></i><a href="https://www.facebook.com/jeffersoncalaguann" target="_blank">Jefferson Calaguan</a></div>
+                <div class="contact-item"><i class="fab fa-instagram"></i><a href="https://www.instagram.com/jeff_clgn/?hl=en" target="_blank">jeff_clgn</a></div>
+                <div class="contact-item"><i class="fas fa-envelope"></i><a href="mailto:jeffersoncalaguan19@gmail.com">jeffersoncalaguan19@gmail.com</a></div>
+                <div class="contact-item"><i class="fas fa-phone"></i><a href="tel:+639702304357">09702304357</a></div>
+                <div class="contact-item"><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/jefferson-calaguan-1376182a4/" target="_blank">linkedin.com/in/jefferson-calaguan</a></div>
+                <div class="contact-item"><i class="fab fa-github"></i><a href="https://github.com/Jeffclgn" target="_blank">github.com/Jeffclgn</a></div>
+            </div>
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Jefferson Calaguan | Aspiring IT Professional. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/jefferson-calaguan-1376182a4/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Jeffclgn" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:jeffersoncalaguan19@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.facebook.com/jeffersoncalaguann" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/jeff_clgn/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
